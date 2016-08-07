@@ -1,0 +1,80 @@
+// Media Queries
+
+@mixin min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+
+@mixin max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+// End media queries
+
+@mixin va-middle() {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 3em 0;
+  @include min($sm) {
+    padding: 0;
+  }
+  .va-middle {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+
+@mixin column-count($count, $gap) {
+  -webkit-column-count: $count; /* Chrome, Safari, Opera */
+  -moz-column-count: $count; /* Firefox */
+  column-count: $count;
+  -webkit-column-gap: $gap; /* Chrome, Safari, Opera */
+  -moz-column-gap: $gap; /* Firefox */
+  column-gap: $gap;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .aspect-ratio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+
+@mixin overlay($opacity) {
+  position: relative;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,$opacity);
+  }
+}

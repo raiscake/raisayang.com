@@ -1,0 +1,14 @@
+/* Full-height panels */
+
+html, body, .body-wrap {
+  height: 100%;
+}
+
+
+/* Grid classes */
+
+.container {
+  @include container;
+  max-width: 1180px;
+  width: 100%;
+}

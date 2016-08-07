@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $headings-color;
+  font-family: $headings-font;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 1em;
+  line-height: $line-height-base;
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
