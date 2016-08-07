@@ -12,6 +12,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # My gemz
 gem "sass", '~> 3.4.9', :require => false
+gem "susy", '~> 2.2'
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
