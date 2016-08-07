@@ -1,3 +1,6 @@
+# Use susy
+require 'susy'
+
 ###
 # Compass
 ###
