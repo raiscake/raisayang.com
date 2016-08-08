@@ -77,6 +77,7 @@
 
 .works-content {
   @include span(5 no-gutters);
+  padding: 3em;
 }
 
 .works-image__screenshot {
