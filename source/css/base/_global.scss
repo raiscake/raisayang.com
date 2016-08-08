@@ -1,9 +1,11 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
   font-family: $sans-serif;
   font-size: $font-size-base;
-  background: $body-bg url('../img/bg-top_02.jpg') no-repeat;
-  background-size: 100% auto;
 }
