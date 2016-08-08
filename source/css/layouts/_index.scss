@@ -47,3 +47,40 @@
 .about-me__title {
   margin: 0 0 .25em;
 }
+
+
+/* Works */
+
+.works {
+  border-bottom: 5px solid $border-color;
+}
+
+.works-row {
+  @include container;
+  display: flex;
+  align-items: center;
+  border-top: 5px solid $border-color;
+  &:nth-child(even) {
+    .works-image {
+      @include push(5);
+    }
+
+    .works-content {
+      @include pull(12);
+    }
+  }
+}
+
+.works-image {
+  @include span(7 no-gutters);
+}
+
+.works-content {
+  @include span(5 no-gutters);
+}
+
+.works-image__screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+}
