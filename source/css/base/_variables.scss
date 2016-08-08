@@ -20,9 +20,12 @@ $lg:    1200px;
 
 /* Colors */
 
+$white:             #fff;
+
 $body-bg:           #c0cacb;
 $text-color:        #234D6F;
 $headings-color:    #664255;
+$border-color:      mix($white, $body-bg, 25%);
 
 
 /* Typography */

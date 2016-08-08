@@ -20,3 +20,23 @@
   font-size: .8em;
   letter-spacing: .13em;
 }
+
+
+/* About Me */
+
+.about-me__content {
+  @include span(10);
+  @include push(1);
+}
+
+.about-me__image {
+  float: left;
+  margin: 0 1em 1em 0;
+  border: 5px solid $border-color;
+  border-radius: 50%;
+  shape-outside: circle();
+}
+
+.about-me__title {
+  margin: 0 0 .25em;
+}
