@@ -30,36 +30,7 @@ title: Raisa Yang - Front end developer
 </div><!-- .top-section -->
 
 <section class="works">
-  <div class="works-row">
-    <div class="works-image">
-      <img src="img/works/index/wclvpa.jpg" width="1024" height="819" alt="WordCamp Lehigh Valley 2016 website" class="works-image__screenshot">
-    </div>
-    <div class="works-content">
-        Sample text
-    </div>
-  </div>
-  <div class="works-row">
-    <div class="works-image">
-      <img src="img/works/index/tastebook.jpg" width="1024" height="819" alt="Tastebook Reviews website" class="works-image__screenshot">
-    </div>
-    <div class="works-content">
-      Sample text
-    </div>
-  </div>
-  <div class="works-row">
-    <div class="works-image">
-      <img src="img/works/index/RSCK.jpg" width="1024" height="819" alt="RSCK website" class="works-image__screenshot">
-    </div>
-    <div class="works-content">
-      Sample text
-    </div>
-  </div>
-  <div class="works-row">
-    <div class="works-image">
-      <img src="img/works/index/robcoterminal.jpg" width="1024" height="819" alt="Robco Terminal Tumblr Theme" class="works-image__screenshot">
-    </div>
-    <div class="works-content">
-      Sample text
-    </div>
-  </div>
+  <% data.works.each do |work| %>
+      <%= partial "partials/works-index", locals: { work: work } %>
+  <% end %>
 </section>

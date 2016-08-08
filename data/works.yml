@@ -1,0 +1,52 @@
+# Works done
+
+- name: WordCamp Lehigh Valley 2016
+
+  skills: Web design and development
+
+  image: img/works/index/wclvpa.jpg
+
+  alt: WordCamp Lehigh Valley 2016 website
+
+  url: http://2016.lehighvalley.wordcamp.org/
+
+  description: Some sample text
+
+
+- name: Tastebook Reviews
+
+  skills: Web design and development
+
+  image: img/works/index/tastebook.jpg
+
+  alt: Tastebook Reviews website
+
+  url: http://tastebook.reviews/
+
+  description: Some sample text
+
+
+- name: RSCK
+
+  skills: Web design and development
+
+  image: img/works/index/RSCK.jpg
+
+  alt: RSCK website
+
+  url: http://raiscake.me/
+
+  description: Some sample text
+
+
+- name: RobCo Terminal Theme
+
+  skills: Tumblr theme development
+
+  image: img/works/index/robcoterminal.jpg
+
+  alt: Robco Terminal Tumblr Theme
+
+  url: http://robcoterminaltheme.tumblr.com/
+
+  description: Some sample text
