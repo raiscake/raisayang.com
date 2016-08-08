@@ -24,6 +24,10 @@
 
 /* About Me */
 
+.about-me {
+  padding: 2em 0;
+}
+
 .about-me__content {
   @include span(10);
   @include push(1);
