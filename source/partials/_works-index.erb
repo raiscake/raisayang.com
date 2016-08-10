@@ -1,7 +1,9 @@
 <div class="works-row">
   <div class="works-image">
     <div class="overlay"></div>
-    <%= image_tag(work["image"], size: "1024x819", alt: work["alt"], class: 'works-image__screenshot') %>
+    <a href="<%= work["url"] %>" target="_blank">
+      <%= image_tag(work["image"], size: "1024x819", alt: work["alt"], class: 'works-image__screenshot') %>
+    </a>
   </div>
   <div class="works-content">
     <h3 class="works-content__title">

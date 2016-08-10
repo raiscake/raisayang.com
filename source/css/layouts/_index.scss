@@ -70,9 +70,10 @@
   align-items: center;
   background-color: $headings-color; //darken($body-bg, 25%);
   border-top: 5px solid $border-color;
-  &:hover {
+  &:hover {  // when hovering entire row, change .overlay opacity
     .overlay {
       opacity: 0;
+      pointer-events: none;
     }
   }
   &:nth-child(even) {
