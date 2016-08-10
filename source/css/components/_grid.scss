@@ -12,3 +12,8 @@ html, body, .body-wrap {
   max-width: 1180px;
   width: 100%;
 }
+
+.content-wrapper {
+  @include span(10);
+  @include push(1);
+}

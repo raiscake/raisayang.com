@@ -3,6 +3,7 @@ title: Raisa Yang - Front end developer
 ---
 
 <div class="top-section">
+
   <section class="text-center hero">
     <div class="va-middle">
       <h1 class="hero__title">
@@ -16,7 +17,7 @@ title: Raisa Yang - Front end developer
 
   <section class="about-me">
     <div class="container">
-      <div class="about-me__content">
+      <div class="content-wrapper about-me__content">
         <img src="img/profile-pic@2x.jpg" width="300" height="300" alt="" class="about-me__image">
         <h2 class="about-me__title">
           Hi, I'm Raisa!
@@ -27,6 +28,7 @@ title: Raisa Yang - Front end developer
       </div>
     </div>
   </section>
+
 </div><!-- .top-section -->
 
 <section class="works">
@@ -36,9 +38,23 @@ title: Raisa Yang - Front end developer
 </section>
 
 <div class="bottom-section">
-  <section class="text-center colophon">
+
+  <section class="talks">
     <div class="container">
-      <div class="colophon__content">
+      <div class="content-wrapper talks__content">
+        <h2 class="talks__title">Talks I've Done</h2>
+        <ul class="talks__list">
+          <% data.talks.each do |talk| %>
+              <%= partial "partials/talks-index", locals: { talk: talk } %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="colophon">
+    <div class="container">
+      <div class="content-wrapper colophon__content">
         <h2 class="colophon__title">
           Colophon
         </h2>
@@ -48,4 +64,5 @@ title: Raisa Yang - Front end developer
       </div>
     </div>
   </section>
-</div>
+
+</div><!-- .bottom-section -->
