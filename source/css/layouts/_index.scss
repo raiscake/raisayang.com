@@ -61,7 +61,6 @@
 
 .works {
   color: $white;
-  background-color: darken($body-bg, 25%);
   border-bottom: 5px solid $border-color;
 }
 
@@ -69,6 +68,7 @@
   @include container;
   display: flex;
   align-items: center;
+  background-color: $headings-color; //darken($body-bg, 25%);
   border-top: 5px solid $border-color;
   &:hover {
     .overlay {
@@ -76,10 +76,10 @@
     }
   }
   &:nth-child(even) {
+    background-color: $text-color; //darken($body-bg, 25%);
     .works-image {
       @include push(5);
     }
-
     .works-content {
       @include pull(12);
       padding: 3em 3em 3em 5em
@@ -89,7 +89,7 @@
 
 .works-image {
   @include span(7 no-gutters);
-  @include overlay($text-color, .25);
+  @include overlay($body-bg, .25);
   position: relative;
   .overlay {
     transition: opacity .2s cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -135,6 +135,10 @@
 .works-content__button {
   color: $white;
   border-color: $white;
+  &:hover {
+    color: $border-color;
+    border-color: $border-color;
+  }
 }
 
 
