@@ -10,12 +10,12 @@
 
   url: http://2016.lehighvalley.wordcamp.org/
 
-  description: Some sample text
+  description: CSS-only development for a WordCamp multi-site, built with Sass and Grunt following a modular approach. Deployed through Github.
 
 
 - name: Tastebook Reviews
 
-  skills: Web design and development
+  skills: WordPress Theme Development
 
   image: img/works/index/tastebook.jpg
 
@@ -23,7 +23,7 @@
 
   url: http://tastebook.reviews/
 
-  description: Some sample text
+  description: Full magazine-style WordPress theme built with Roots and Bootstrap.
 
 
 - name: RSCK
@@ -36,7 +36,7 @@
 
   url: http://raiscake.me/
 
-  description: Some sample text
+  description: Personal social aggregate built with React. Pulls entries from my blog, Twitter, and Instagram.
 
 
 - name: RobCo Terminal Theme
@@ -49,4 +49,4 @@
 
   url: http://robcoterminaltheme.tumblr.com/
 
-  description: Some sample text
+  description: Just a fun Tumblr theme emulating the in-game terminal from Fallout.
