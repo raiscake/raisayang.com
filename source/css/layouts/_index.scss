@@ -1,6 +1,14 @@
+/* Page sections for background images */
+
 .top-section {
   height: 160%;
   background: $body-bg url('../img/bg-top_02.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.bottom-section {
+  padding-bottom: 30%;
+  background: $body-bg url('../img/bg-bottom_02.jpg') no-repeat bottom center;
   background-size: cover;
 }
 
@@ -127,4 +135,20 @@
 .works-content__button {
   color: $white;
   border-color: $white;
+}
+
+
+/* Colophon */
+
+.colophon {
+  padding: 5em 0;
+}
+
+.colophon__content {
+  @include span(10);
+  @include push(1);
+}
+
+.colophon__title {
+  margin: 0 0 .25em;
 }
