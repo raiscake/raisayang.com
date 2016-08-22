@@ -54,15 +54,65 @@ title: Raisa Yang - Front end developer
 
   <section class="contact">
     <div class="container">
+      <div class="content-wrapper">
+        <h2 class="contact__title">Get in Touch</h2>
+        <div class="contact__copy">
+          <p>
+            I'd love to hear from you! If you're interested in hiring me or just want to say hi, look no further than this handy-dandy mail form.
+          </p>
+        </div><!-- .contact-copy -->
+      </div><!-- .content-wrapper -->
+
       <form action="https://formspree.io/hello@raisayang.com"
-            method="POST">
-        <input type="text" name="Name">
-        <input type="email" name="Email">
-        <input type="url" name="URL" placeholder="http://">
-        <input type="text" name="Subject">
-        <textarea name="Message"></textarea>
-        <input type="submit" value="Send">
+            method="POST" class="contact-form">
+        <div class="contact-form__row">
+          <div class="contact-form__field">
+            <label for="Name">Name</label>
+            <input type="text" name="Name">
+          </div>
+          <div class="contact-form__field">
+            <label for="Email">Email</label>
+            <input type="email" name="Email">
+          </div>
+          <div class="contact-form__field">
+            <label for="URL">URL</label>
+            <input type="url" name="URL" placeholder="http://">
+          </div>
+        </div>
+        <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label for="Subject">Subject</label>
+              <input type="text" name="Subject">
+            </div>
+        </div>
+        <div class="contact-form__row">
+          <label for="Message">Message</label>
+          <textarea name="Message" rows="6"></textarea>
+        </div>
+        <div class="text-center contact-form__submit">
+          <button type="submit" class="button contact-form__button">Send Message</button>
+        </div>
+
       </form>
+    </div>
+  </section>
+
+  <section class="social">
+    <div class="container">
+      <div class="content-wrapper">
+        <h2 class="social__title">... Or Find Me on Social Media!</h2>
+        <ul class="social-list">
+          <li>
+            <a href="http://github.com/raiscake" target="_blank"><i class="fa fa-github"></i></a>
+          </li>
+          <li>
+            <a href="http://twitter.com/sweetraiscake" target="_blank"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com/sweetraiscake" target="_blank"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 

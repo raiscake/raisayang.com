@@ -1,8 +1,10 @@
 .button {
   display: inline-block;
   padding: .5em 1em;
+  color: $text-color;
   font-family: $headings-font;
   letter-spacing: .03em;
   text-transform: uppercase;
+  background: $body-bg;
   border: 2px solid $text-color;
 }

@@ -7,8 +7,8 @@
 }
 
 .bottom-section {
-  padding-bottom: 30%;
-  background: $body-bg url('../img/bg-bottom_02.jpg') no-repeat bottom center;
+  padding-bottom: 42%;
+  background: $body-bg url('../img/inner-bg.jpg') no-repeat bottom center;
   background-size: cover;
 }
 
@@ -130,6 +130,7 @@
 
 .works-content__button {
   color: $white;
+  background: transparent;
   border-color: $white;
   &:hover {
     color: $border-color;
@@ -156,6 +157,36 @@
 
 .talks__name {
   display: block;
+}
+
+/* Contact */
+
+.contact__copy {
+  margin: 0 0 2.5em;
+}
+
+
+/* Social */
+
+.social {
+  padding: 5em 0 0;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    &:not(:last-of-type) {
+      margin-right: .5em;
+    }
+  }
+  a {
+    color: $text-color;
+    border: 0;
+  }
 }
 
 
