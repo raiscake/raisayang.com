@@ -10,6 +10,9 @@
   padding-bottom: 42%;
   background: $body-bg url('../img/inner-bg.jpg') no-repeat bottom center;
   background-size: cover;
+  @include min($lg) {
+
+  }
 }
 
 
@@ -61,10 +64,12 @@
 
 .works-row {
   @include container;
-  display: flex;
-  align-items: center;
   background-color: $headings-color; //darken($body-bg, 25%);
   border-top: 5px solid $border-color;
+  @include min($lg) {
+    display: flex;
+    align-items: center;
+  }
   &:hover {  // when hovering entire row, change .overlay opacity
     .overlay {
       opacity: 0;
@@ -74,27 +79,36 @@
   &:nth-child(even) {
     background-color: $text-color; //darken($body-bg, 25%);
     .works-image {
-      @include push(5);
+      @include min($lg) {
+        @include push(5);
+      }
     }
     .works-content {
-      @include pull(12);
-      padding: 3em 3em 3em 5em
+      @include min($lg) {
+        @include pull(12);
+        padding: 3em 3em 3em 5em;
+      }
     }
   }
 }
 
 .works-image {
-  @include span(7 no-gutters);
-  @include overlay($body-bg, .25);
   position: relative;
+  @include min($lg) {
+    @include span(7 no-gutters);
+    @include overlay($body-bg, .25);
+  }
   .overlay {
     transition: opacity .2s cubic-bezier(0.47, 0, 0.745, 0.715);
   }
 }
 
 .works-content {
-  @include span(5 no-gutters);
-  padding: 3em 5em 3em 3em;
+  padding: 3em;
+  @include min($lg) {
+    @include span(5 no-gutters);
+    padding: 3em 5em 3em 3em;
+  }
 }
 
 .works-image__screenshot {
@@ -116,7 +130,10 @@
 }
 
 .works-content__desc {
-  margin: 2em 0;
+  margin: 1em 0;
+  @include min($lg) {
+    margin: 2em 0;
+  }
 }
 
 .works-content__buttons {
@@ -142,8 +159,12 @@
 /* Talks */
 
 .talks {
-  padding: 5em 0 0;
-  margin: 0 0 5em;
+  padding: 3em 0 0;
+  margin: 0 0 3em;
+  @include min($lg) {
+    padding: 5em 0 0;
+    margin: 0 0 5em;
+  }
 }
 
 .talks__list {
@@ -161,6 +182,13 @@
 
 /* Contact */
 
+.contact-form {
+  padding: 2em 0;
+  @include min($lg) {
+    padding: 0;
+  }
+}
+
 .contact__copy {
   margin: 0 0 2.5em;
 }
@@ -169,7 +197,10 @@
 /* Social */
 
 .social {
-  padding: 5em 0 0;
+  padding: 3em 0 0;
+  @include min($lg) {
+    padding: 5em 0 0;
+  }
 }
 
 .social-list {
@@ -193,7 +224,10 @@
 /* Colophon */
 
 .colophon {
-  margin: 5em 0;
+  margin: 3em 0;
+  @include min($lg) {
+    margin: 5em 0;
+  }
 }
 
 .colophon__title {
