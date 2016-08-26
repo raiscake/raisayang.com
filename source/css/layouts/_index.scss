@@ -1,17 +1,23 @@
 /* Page sections for background images */
 
 .top-section {
-  height: 160%;
+  height: 180%;
   background: $body-bg url('../img/bg-top_02.jpg') no-repeat center;
   background-size: cover;
+  @include min($md) {
+    height: 160%;
+  }
 }
 
 .bottom-section {
-  padding-bottom: 42%;
+  padding-bottom: 75%;
   background: $body-bg url('../img/inner-bg.jpg') no-repeat bottom center;
   background-size: cover;
+  @include min($md) {
+    padding-bottom: 50%;
+  }
   @include min($lg) {
-
+    padding-bottom: 42%;
   }
 }
 
@@ -44,10 +50,15 @@
 
 .about-me__image {
   float: left;
+  width: 220px;
+  height: auto;
   margin: 0 1em 1em 0;
   border: 5px solid $border-color;
   border-radius: 50%;
   shape-outside: circle();
+  @include min($md + 50) {
+    width: 300px;
+  }
 }
 
 .about-me__title {
@@ -183,7 +194,7 @@
 /* Contact */
 
 .contact-form {
-  padding: 2em 0;
+  padding: 0 2em;
   @include min($lg) {
     padding: 0;
   }
