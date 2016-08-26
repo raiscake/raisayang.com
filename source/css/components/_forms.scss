@@ -4,6 +4,10 @@ input, textarea {
   color: $text-color;
   background-color: $body-bg;
   border: 2px solid $border-color;
+  &:focus {
+    border-color: $white;
+    outline: none;
+  }
 }
 
 
