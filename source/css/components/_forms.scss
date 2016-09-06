@@ -25,9 +25,15 @@ input, textarea {
   &:first-of-type {
     @include container;
     .contact-form__field {
-      @include span(4 no-gutters);
+      margin-bottom: 1.5em;
+      @include min($xs) {
+        @include span(4 no-gutters);
+        margin-bottom: 0;
+      }
       &:not(:last-of-type) {
-        padding-right: 1.5em;
+        @include min($xs) {
+          padding-right: 1.5em;
+        }
       }
     }
   }

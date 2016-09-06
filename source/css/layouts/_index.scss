@@ -1,9 +1,11 @@
 /* Page sections for background images */
 
 .top-section {
-  height: 180%;
   background: $body-bg url('../img/bg-top_02.jpg') no-repeat center;
   background-size: cover;
+  @include min($xs) {
+    height: 180%;
+  }
   @include min($md) {
     height: 160%;
   }
@@ -29,7 +31,10 @@
 
 .hero {
   @include va-middle;
-  height: 62.5%;
+  padding: 10em 0;
+  @include min($xs) {
+    height: 62.5%;
+  }
 }
 
 .hero__title {
@@ -39,8 +44,13 @@
 }
 
 .hero__subtitle {
+  width: 240px;
+  margin: 0 auto;
   font-size: .8em;
   letter-spacing: .13em;
+  @include min($xs) {
+    width: auto;
+  }
 }
 
 
@@ -48,17 +58,24 @@
 
 .about-me {
   padding: 3em 0;
-  height: 37.5%;
+  @include min($xs) {
+    height: 37.5%;
+  }
 }
 
 .about-me__image {
-  float: left;
-  width: 220px;
+  display: block;
+  width: 100%;
   height: auto;
-  margin: 0 1em 1em 0;
+  margin: 0 auto 2em;
   border: 5px solid $border-color;
   border-radius: 50%;
-  shape-outside: circle();
+  @include min($xs) {
+    float: left;
+    width: 220px;
+    margin: 0 1em 1em 0;
+    shape-outside: circle();
+  }
   @include min($md + 50) {
     width: 300px;
   }
@@ -118,7 +135,10 @@
 }
 
 .works-content {
-  padding: 3em;
+  padding: 3em 2em;
+  @include min($xs) {
+    padding: 3em;
+  }
   @include min($lg) {
     @include span(5 no-gutters);
     padding: 3em 5em 3em 3em;
