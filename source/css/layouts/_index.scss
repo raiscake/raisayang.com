@@ -10,9 +10,12 @@
 }
 
 .bottom-section {
-  padding-bottom: 75%;
-  background: $body-bg url('../img/inner-bg.jpg') no-repeat bottom center;
+  padding-bottom: 100%;
+  background: $body-bg url('../img/inner-bg.jpg') no-repeat top center;
   background-size: cover;
+  @include min($sm) {
+    padding-bottom: 75%;
+  }
   @include min($md) {
     padding-bottom: 50%;
   }
