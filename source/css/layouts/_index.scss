@@ -12,23 +12,24 @@
 }
 
 .bottom-section {
-  padding-bottom: 200%;
-  background: $body-bg url('../img/inner-bg.jpg') no-repeat top center;
+  padding-bottom: 65%;
+  background: $body-bg url('../img/inner-bg-sm.jpg') no-repeat top center;
   background-size: cover;
   @include min($xxs) {
-    padding-bottom: 140%;
+    padding-bottom: 45%;
   }
   @include min($xs) {
-    padding-bottom: 100%;
+    padding-bottom: 30%;
+  //  background-image: url('../img/inner-bg.jpg');
   }
   @include min($sm) {
-    padding-bottom: 75%;
+    padding-bottom: 25%;
   }
   @include min($md) {
-    padding-bottom: 50%;
+    padding-bottom: 15%;
   }
   @include min($lg) {
-    padding-bottom: 42%;
+    padding-bottom: 12.5%;
   }
 }
 
