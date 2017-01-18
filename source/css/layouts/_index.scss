@@ -39,7 +39,7 @@
 .hero {
   @include va-middle;
   padding: 10em 0;
-  @include min($xs) {
+  @include min($sm) {
     height: 62.5%;
   }
 }

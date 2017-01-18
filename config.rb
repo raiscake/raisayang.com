@@ -56,6 +56,8 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
+
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -72,4 +74,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # Ignore files
+  ignore 'node_modules/*'
 end
