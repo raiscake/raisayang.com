@@ -39,7 +39,7 @@
 .hero {
   @include va-middle;
   padding: 10em 0;
-  @include min($sm) {
+  @include min($xs) {
     height: 62.5%;
   }
 }
@@ -258,6 +258,9 @@
   a {
     color: $text-color;
     border: 0;
+    &:hover {
+      color: darken($link-color, 10%);;
+    }
   }
 }
 
